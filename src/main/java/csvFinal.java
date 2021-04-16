@@ -6,11 +6,11 @@ import java.util.ArrayList;
 public class csvFinal {
     public class ReadCSVData {
         public static final String actors
-                = "C:\\Repo\\@temp\\actors.csv";
+                = "..\\..\\Files\\actors.csv";
         public static final String films
-                = "C:\\Repo\\@temp\\films.csv";
+                = "..\\..\\Files\\films.csv";
         public static final String generes
-                = "C:\\Repo\\@temp\\generes.csv";
+                = "..\\..\\Files\\generes.csv";
     }
 
     public static void main (String[] args) {
@@ -35,7 +35,6 @@ public class csvFinal {
 
             while ((nextRecord = csvReader.readNext()) != null) {
                 for (String cell : nextRecord) {
-//                    System.out.println(cell + "\t");
                     Result.add(cell);
                 }
                 System.out.println();
